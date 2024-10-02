@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+    <libro idioma="espaniol">
+        <titulo_de_libro>A dos metros de ti</titulo_de_libro>
+        <autor>
+            <autor1>Rachael Lippincott</autor1>
+            <autor2>Miiki Daughtry</autor2>
+            <autor3></autor3>
+        </autor>
+        <anio_de_publicacion>2014</anio_de_publicacion>
+        <genero>
+            <ficcion>no</ficcion>
+            <ciencia>no</ciencia>
+            <historia>no</historia>
+        </genero>
+        <sinopsis>A Stella Grant le gusta tener el control, a pesar de no poder dominar sus propios pulmones, que la han tenido en el hospital la mayor parte de su vida. Por encima de todo, Stella necesita controlar su espacio para mantenerse alejada de cualquier persona o cosa que pueda transmitirle una infección y poner en peligro su trasplante de pulmón. Dos metros de distancia. Sin excepciones.</sinopsis>
+        <comentarios>
+            <comentario1>Me ha parecido un libro muy fácil de leer, fresquito, incluso a pesar de estar repleto de drama.</comentario1>
+        </comentarios>
+    </libro>
+    <libro idioma="espaniol">
+        <titulo_de_libro>El arbol de la ciencia</titulo_de_libro>
+        <autor>
+            <autor1>Pío Baroja</autor1>
+        </autor>
+        <anio_de_publicacion>1911</anio_de_publicacion>
+        <genero>
+            <ficcion>no</ficcion>
+            <ciencia>no</ciencia>
+            <historia>si</historia>
+        </genero>
+        <sinopsis>La novela cuenta la vida de Andrés Hurtado desde que comienza a estudiar Medicina en Madrid. Su vida familiar es sórdida y triste, enfrentado a su padre y sólo aliviado por el cariño que siente por Luis, su hermano menor.</sinopsis>
+        <comentarios>
+            <comentario1>Sin duda una obra maestra que recomiendo a todo el mundo, con una filosofía exquisita.</comentario1>
+        </comentarios>
+    </libro>
+    <libro idioma="espaniol">
+        <titulo_de_libro>El manifesto comunista</titulo_de_libro>
+        <autor>
+            <autor1>Karl Marx</autor1>
+        </autor>
+        <anio_de_publicacion>1848</anio_de_publicacion>
+        <genero>
+            <ficcion>no</ficcion>
+            <ciencia>no</ciencia>
+            <historia>si</historia>
+        </genero>
+        <sinopsis>es un texto temprano de Karl Marx y Friedrich Engels redactado a modo de manifiesto entre 1847 y 1848, cuando comenzaron las revoluciones de 1848, por encargo de la Liga de los comunistas y publicado por primera vez en Londres el 21 de febrero de 1848 como un folleto de 23 páginas que reconoce a los comunistas como una fuerza política en Europa y expone sus conceptos, fines y tendencias.</sinopsis>
+        <comentarios>
+            <comentario1>Este fragmento nos muestra a la sociedad burguesa como el resultado de la lucha de clases acontecida en la sociedad feudal.</comentario1>
+        </comentarios>
+    </libro>
+</biblioteca>

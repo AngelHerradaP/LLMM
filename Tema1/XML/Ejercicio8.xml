@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda>
+    <persona sexo="masculino">
+        <nombre>Angel</nombre>
+        <apellidos>Herrada Porras</apellidos>
+        <ciudad>Malaga</ciudad>
+        <telefono>
+            <telefono_casa>952242959</telefono_casa>
+            <telefono_movil>610993691</telefono_movil>
+            <telefono_trabajo>610939543</telefono_trabajo>
+        </telefono>
+    </persona>
+</agenda>
