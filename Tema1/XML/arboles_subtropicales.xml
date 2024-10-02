@@ -7,7 +7,7 @@
         <color_de_fruto>Rosa</color_de_fruto>
         <maduracion>Agosto</maduracion>
         <riesgo>Diario</riesgo>
-        <precio_kg>3,5€</precio_kg>
+        <precio moneda="€" unidad="kg">3,5</precio>
     </arbol>
     <arbol>
         <nombre>Logan</nombre>
@@ -16,7 +16,7 @@
         <color_de_fruto>Rosa</color_de_fruto>
         <maduracion>Octubre</maduracion>
         <riesgo>Diario</riesgo>
-        <precio_kg>2,5€</precio_kg>
+        <precio moneda="€" unidad="kg">2,5</precio>
     </arbol>
     <arbol>
         <nombre>Litchi</nombre>
@@ -25,6 +25,6 @@
         <color_de_fruto>Rojo</color_de_fruto>
         <maduracion>Agosto</maduracion>
         <riesgo>Diario</riesgo>
-        <precio_kg>3€</precio_kg>
+        <precio moneda="€" unidad="kg">3</precio>
     </arbol>
 </arboles_subtropicales>
