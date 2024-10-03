@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persona>
-    <nombre>Carlos</nombre>
-    <fecha_de_nacimiento>
-        <dia>23</dia>
-        <mes>6</mes>
-        <anio>2001</anio>
-    </fecha_de_nacimiento>
-    <ciudad>Malaga</ciudad>
-    <nombre>Alejandro</nombre>
-    <fecha_de_nacimiento>
-        <dia>15</dia>
-        <mes>10</mes>
-        <anio>1995</anio>
-    </fecha_de_nacimiento>
-    <ciudad>Malaga</ciudad>
-    <nombre>Angel</nombre>
-    <fecha_de_nacimiento>
-        <dia>5</dia>
-        <mes>12</mes>
-        <anio>2001</anio>
-    </fecha_de_nacimiento>
-    <ciudad>Malaga</ciudad>
-</persona>
+<personas>
+    <persona>
+        <nombre>Carlos</nombre>
+        <fecha_de_nacimiento>
+            <dia>23</dia>
+            <mes>6</mes>
+            <anio>2001</anio>
+        </fecha_de_nacimiento>
+        <ciudad>Malaga</ciudad>
+    </persona>
+    <persona>
+        <nombre>Alejandro</nombre>
+        <fecha_de_nacimiento>
+            <dia>15</dia>
+            <mes>10</mes>
+            <anio>1995</anio>
+        </fecha_de_nacimiento>
+        <ciudad>Malaga</ciudad>
+    </persona>
+    <persona>
+        <nombre>Angel</nombre>
+        <fecha_de_nacimiento>
+            <dia>5</dia>
+            <mes>12</mes>
+            <anio>2001</anio>
+        </fecha_de_nacimiento>
+        <ciudad>Malaga</ciudad>
+    </persona>
+</personas>
