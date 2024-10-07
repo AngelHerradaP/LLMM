@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehiculos xmlns:h="https://iesbelen.org/xml/coches" xmlns:f="https://iesbelen.org/xml/motos">
+    <h:coche>
+        <h:marca></h:marca>
+        <h:modelo></h:modelo>
+        <h:potencia></h:potencia>
+    </h:coche>
+    <f:moto>
+        <f:marca></f:marca>
+        <f:modelo></f:modelo>
+        <f:cilindrada></f:cilindrada>
+        <f:aceleracion></f:aceleracion>
+    </f:moto>
+</vehiculos>

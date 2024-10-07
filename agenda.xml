@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda xmlns:age="https://www.ejemplo.com/agenda" xmlns:ema="https://www.ejemplo.com/correo">
+    <contacto>
+        <nombre></nombre>
+        <age:emails>
+            <age:email></age:email>
+        </age:emails>
+        <telefonos>
+            <telefono></telefono>
+        </telefonos>
+        <ema:bandeja>
+            <ema:correo>
+                <ema:remitente></ema:remitente>
+                <ema:destinatario></ema:destinatario>
+                <ema:asunto></ema:asunto>
+                <ema:cuerpo></ema:cuerpo>
+            </ema:correo>
+        </ema:bandeja>
+    </contacto>
+    <contacto>
+        <nombre></nombre>
+        <age:emails>
+            <age:email></age:email>
+        </age:emails>
+        <telefonos>
+            <telefono></telefono>
+        </telefonos>
+        <ema:bandeja>
+            <ema:correo>
+                <ema:remitente></ema:remitente>
+                <ema:destinatario></ema:destinatario>
+                <ema:asunto></ema:asunto>
+                <ema:cuerpo></ema:cuerpo>
+            </ema:correo>
+        </ema:bandeja>
+    </contacto>
+</agenda>
