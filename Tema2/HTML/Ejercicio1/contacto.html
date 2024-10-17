@@ -11,7 +11,7 @@
         <li><a href="index.html">Pagina principal</a></li>
         <li><a href="carteles.html">Carteles de peliculas</a></li>
         <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="https://www.filmaffinity.com/es/main.html">Pagina Filmaffinity</a></li>
+        <li><a href="https://www.filmaffinity.com">Pagina Filmaffinity</a></li>
     </ul>
     <hr/>
     <form action="/enviar" method="POST">
@@ -27,8 +27,17 @@
             <label for="Mensaje">Mensaje:</label>
             <input type="mensaje" id="mensaje" name="mensaje"><br><br>
         </div>
+        <div>
             <input type="submit" value="Enviar">
             <input type="reset" value="Borrar">
+            <label for="opciones">Opciones</label>
+            <select name="opciones" id="opciones">
+                <option value="opcion1">Opcion 1</option>
+                <option value="opcion2">Opcion 2</option>
+                <option value="opcion3">Opcion 3</option>
+                <option value="opcion4">Opcion 4</option>
+            </select>
+        </div>
     </form>
 </body>
 </html>
