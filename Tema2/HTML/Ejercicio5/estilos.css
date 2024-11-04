@@ -1,0 +1,68 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-style: normal;
+    margin: auto;
+    background-color: #E9ECFC;
+    width: 800px;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-style: bold;
+    color: red;
+    text-align: center;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-style: bold;
+    color: blue;
+    text-align: right;
+    border-bottom: solid 2px black;
+    margin-top: 5%;
+}
+ol{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    color: blue;
+    background-color: lightyellow;
+    border: dashed black;
+    text-align: left;
+    width: 40%;
+    margin: 20px 0 20px 50px;
+    padding: 20px 0 20px 50px;
+}
+.precio{
+    background-color: white;
+    text-align: center;
+    font-style: bold;
+    font-size: 24px;
+}
+.cantidad{
+    color: red;
+}
+a:hover{
+    text-decoration: none;
+    color: red;
+}
+div{
+    text-align: center;
+}
+.honda1{
+    float: right;
+    display: inline;
+    margin: 0 0 2% 2%;
+}
+.honda2{
+    float: left;
+    display: inline;
+    margin-right: 2%;
+}
+.logo{
+    padding: 5px;
+}
+p{
+    text-align: justify;
+}
