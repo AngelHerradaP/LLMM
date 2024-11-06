@@ -2,9 +2,8 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 12px;
     font-style: normal;
-    margin: auto;
     background-color: #E9ECFC;
-    width: 800px;
+    width: 80%;
 }
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -30,7 +29,7 @@ ol{
     background-color: lightyellow;
     border: dashed black;
     text-align: left;
-    width: 40%;
+    width: 17%;
     margin: 20px 0 20px 50px;
     padding: 20px 0 20px 50px;
 }
@@ -61,7 +60,8 @@ div{
     margin-right: 2%;
 }
 .logo{
-    padding: 5px;
+    display: block;
+    margin: auto;
 }
 p{
     text-align: justify;

@@ -1,0 +1,37 @@
+.tabla {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-collapse: collapse;
+    border: solid thin grey;
+    margin: auto;
+}
+.tabla caption{
+    color: purple;
+    font-size: 24px;
+    font-style: bold;
+}
+.encabezado {
+    background-color: lightskyblue;
+    color: white;
+}
+.encabezado1{
+    text-align: left;
+    background-color: orangered;
+    color: white;
+
+    border-top: solid thin white;
+}
+.dorado th{
+    background-color: goldenrod;
+    border-top: solid lightgray;
+    color: white;
+    text-align: left;
+}
+.dorado td{
+    color: grey;
+    border-bottom: dotted thin lightgray;
+    border-top: dotted thin lightgray;
+}
+.tabla, td, th{
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+}

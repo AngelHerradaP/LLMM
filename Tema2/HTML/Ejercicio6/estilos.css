@@ -1,0 +1,40 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-style: bold;
+    color: black;
+}
+.nombreClase caption{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: green;
+    text-align: center;
+}
+table.nombreClase {
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+    border: solid thin black;  
+}
+.nombreClase td,th{
+padding: 10px;
+}
+.encabezado{
+    background-color: rgb(255, 255, 138);
+    color: darkgoldenrod;
+    border: solid thin black;
+}
+.azulClaro{
+    background-color: rgb(120, 208, 238);
+}
+.azulOscuro{
+    background-color: rgb(71, 163, 254);
+}
+.azulClaro th, .azulOscuro th, .recreo th{
+    background-color: lightseagreen;
+    border-right: solid thin black;
+}
+.recreo td{
+    background-color: lightgrey;
+    border: solid thin black;
+}
