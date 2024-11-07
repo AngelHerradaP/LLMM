@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <h1>Ejercicio 1</h1>
+    <form id="ejercicio1" name="ejercicio1" method="post" action="">
+        <fieldset>
+            <legend>Detalles personals</legend>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input placeholder="Pon tu nombre" type="text" id="nombre" name="nombre">
+            </div>
+            <div>
+                <label for="edad">Edad:</label>
+                <input maxlength="3" min="0" type="number" id="edad" name="edad">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Informacion del comentario</legend>
+            <div>
+                <label for="usuario">Usuario:</label>
+                <input placeholder="Pon tu usuario" type="text" id="usuario" name="usuario">
+            </div>
+            <div>
+                <label for="contraseña">Contraseña:</label>
+                <input placeholder="Pon tu contraseña" type="password" id="contraseña" name="contraseña">
+            </div>
+            <div>
+                <label for="comentario">Comentario:</label>
+                <input placeholder="Pon tu comentario" type="text" id="comentario" name="comentario">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input placeholder="Pon tu email" type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            </div>
+            <div>
+                <label for="archivo">Introduce un fichero:</label>
+                <input type="file" id="archivo" name="archivo">
+            </div>
+            <div>
+                <input type="submit" id="enviar" name="enviar">
+                <input type="reset" value="Borrar" id="borrar" name="borrar">
+            </div>
+        </fieldset>
+    </form>
+    <h1>Ejercicio 2</h1>
+    <form id="ejercicio2" name="ejercicio2" method="post" action="">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+        <div>
+            <label for="comentario">Comentario:</label>
+            <textarea rows="5" name="comentario" id="comentario"></textarea>
+        </div>
+        <div>
+            <label for="nombre">Selecciona el color de su avatar</label>
+            <input type="color" id="nombre" name="nombre">
+        </div>
+        <div>
+            <input type="submit" value="Enviar comentario" id="nombre" name="nombre">
+        </div>
+    </form>
+    <h1>Ejercicio3</h1>
+    <form id="ejercicio3" name="ejercicio3" method="post" action="">
+        <div>
+            <label for="comida">Elige su comida favorita:</label>
+            <select name="comida" id="comida">
+                <option value="comida1">Ensalada</option>
+                <option value="comida2">Pizza</option>
+                <option value="comida3">Hamburguesa</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Entrar" id="enviar" name="enviar">
+            <input type="reset" value="Borrar" id="borrar" name="borrar">
+        </div>
+    </form>
+    <h1>Ejercicio4</h1>
+    <form id="ejercicio4" name="ejercicio4" method="post" action="">
+        <div>
+            <label for="comida">Elige su comida favorita:</label>
+            <input type="checkbox" name="comida" id="Ensalada">
+            <label for="comida">Ensalada</label>
+            <input type="checkbox" name="comida" id="Kebab">
+            <label for="comida">Kebab</label>
+            <input type="checkbox" name="comida" id="hamburguesa">
+            <label for="comida">Hamburguesa</label>
+        </div>
+        <div>
+            <label for="comida">Metodo paga:</label>
+            <input type="radio" name="pago" id="vale">
+            <label for="pago">Vale</label>
+            <input type="radio" name="pago" id="tarjeta">
+            <label for="pago">Tarjeta</label>
+            <input type="radio" name="pago" id="cash">
+            <label for="pago">CASH</label>
+        </div>
+        <div>
+            <input type="submit" value="Entrar" id="enviar" name="enviar">
+            <input type="reset" value="Borrar" id="borrar" name="borrar">
+        </div>
+    </form>
+</body>
+</html>
