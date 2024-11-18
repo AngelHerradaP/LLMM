@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7-2</title>
+</head>
+<body>
+    <form id="simple" name="simple" method="post" action="">
+        <fieldset>
+            <legend>Pedido de Pizza</legend>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion">
+            </div>
+            <div>
+                <label for="ingredientes">Ingredientes:</label>
+                <input type="radio" name="ingredientes" id="ingredientes" value="queso">Queso</input>
+                <input type="radio" name="ingredientes" id="ingredientes" value="cebolla">Cebolla</input>
+                <input type="radio" name="ingredientes" id="ingredientes" value="pimiento">Pimiento</input>
+            </div>
+            <div>
+                <label for="tamanio">Tamaño:</label>
+                <input type="checkbox" name="tamanio" id="tamanio" value="pequenia">Pequeña</input>
+                <input type="checkbox" name="tamanio" id="tamanio" value="mediana">Mediana</input>
+                <input type="checkbox" name="tamanio" id="tamanio" value="grande">Grande</input>
+            </div>
+            <div>
+                <label for="tarjeta">Tarjeta:</label>
+                <select name="tarjeta" id="tarjeta">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                </select>
+            </div>
+            <div>
+                <label for="comentarios">Comentarios:</label>
+                <textarea name="comentarios" id="comentarios"></textarea>
+            </div>
+            <div>
+                <input type="submit" id="enviar" name="enviar">
+                <input type="reset" value="Borrar" id="borrar" name="borrar">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
