@@ -7,22 +7,25 @@
     <title>Ejercicio 7-2</title>
 </head>
 <body>
-    <form id="simple" name="simple" method="post" action="">
+    <form class="pedidodepizza1" id="simple" name="simple" method="post" action="">
         <fieldset>
             <legend>Pedido de Pizza</legend>
             <div>
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre">
             </div>
-            <div>
+            <div class="direccion">
                 <label for="direccion">Dirección:</label>
                 <input type="text" id="direccion" name="direccion">
             </div>
-            <div>
+            <div class="ingredientes">
                 <label for="ingredientes">Ingredientes:</label>
-                <input type="radio" name="ingredientes" id="ingredientes" value="queso">Queso</input>
-                <input type="radio" name="ingredientes" id="ingredientes" value="cebolla">Cebolla</input>
-                <input type="radio" name="ingredientes" id="ingredientes" value="pimiento">Pimiento</input>
+                <input type="radio" name="ingredientes" id="ingredientes" value="queso"></input>
+                <label for="ingredientes">queso</label>
+                <input type="radio" name="ingredientes" id="ingredientes" value="cebolla"></input>
+                <label for="ingredientes">cebolla</label>
+                <input type="radio" name="ingredientes" id="ingredientes" value="pimiento"></input>
+                <label for="ingredientes">pimiento</label>
             </div>
             <div>
                 <label for="tamanio">Tamaño:</label>
@@ -39,7 +42,7 @@
             </div>
             <div>
                 <label for="comentarios">Comentarios:</label>
-                <textarea name="comentarios" id="comentarios"></textarea>
+                <textarea rows="7" cols="50" name="comentarios" id="comentarios"></textarea>
             </div>
             <div>
                 <input type="submit" id="enviar" name="enviar">

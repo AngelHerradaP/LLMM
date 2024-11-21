@@ -1,9 +1,10 @@
 body{
-    background-color: darkblue;
+    background-color: lightgrey;
     color: white;
 }
-form{
-    width: 100%;
+.pedidodepizza1{
+    background-color: darkblue;
+    padding: 2%;
 }
 div{
     padding: 10px 0 10px 0;
@@ -11,4 +12,12 @@ div{
 label{
     display: inline-block;
     width: 10%;
+    float: left;
+}
+.ingredientes label {
+    display: inline;
+    float: none;
+}
+.direccion input {
+    width: 300px;
 }
