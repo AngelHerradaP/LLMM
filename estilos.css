@@ -2,14 +2,15 @@ body{
     background-color: lightgrey;
     color: white;
 }
-.pedidodepizza1{
+.pedidoDePizza1{
     background-color: darkblue;
     padding: 2%;
+    border: solid thin black;
 }
-div{
+.pedidoDePizza1 div{
     padding: 10px 0 10px 0;
 }
-label{
+.pedidoDePizza1 label{
     display: inline-block;
     width: 10%;
     float: left;
@@ -20,4 +21,19 @@ label{
 }
 .direccion input {
     width: 300px;
+}
+.pedidoDePizza2{
+    background-color: #ffcc99;
+    padding: 2%;
+    margin-top: 2%;
+    border: solid thin black;
+}
+.pedidoDePizza2 h1{
+    background-color: orange;
+    text-align: center;
+    color: black;
+    padding: 3px;
+}
+.enviarResetear input{
+    margin-right: 25%;
 }

@@ -7,19 +7,19 @@
     <title>Ejercicio 7-2</title>
 </head>
 <body>
-    <form class="pedidodepizza1" id="simple" name="simple" method="post" action="">
+    <form class="pedidoDePizza1" id="simple" name="simple" method="post" action="">
         <fieldset>
             <legend>Pedido de Pizza</legend>
             <div>
-                <label for="nombre">Nombre:</label>
+                <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre">
             </div>
             <div class="direccion">
-                <label for="direccion">Dirección:</label>
+                <label for="direccion">Dirección</label>
                 <input type="text" id="direccion" name="direccion">
             </div>
             <div class="ingredientes">
-                <label for="ingredientes">Ingredientes:</label>
+                <label for="ingredientes">Ingredientes</label>
                 <input type="radio" name="ingredientes" id="ingredientes" value="queso"></input>
                 <label for="ingredientes">queso</label>
                 <input type="radio" name="ingredientes" id="ingredientes" value="cebolla"></input>
@@ -28,20 +28,20 @@
                 <label for="ingredientes">pimiento</label>
             </div>
             <div>
-                <label for="tamanio">Tamaño:</label>
+                <label for="tamanio">Tamaño</label>
                 <input type="checkbox" name="tamanio" id="tamanio" value="pequenia">Pequeña</input>
                 <input type="checkbox" name="tamanio" id="tamanio" value="mediana">Mediana</input>
                 <input type="checkbox" name="tamanio" id="tamanio" value="grande">Grande</input>
             </div>
             <div>
-                <label for="tarjeta">Tarjeta:</label>
+                <label for="tarjeta">Tarjeta</label>
                 <select name="tarjeta" id="tarjeta">
                     <option value="visa">Visa</option>
                     <option value="mastercard">Mastercard</option>
                 </select>
             </div>
             <div>
-                <label for="comentarios">Comentarios:</label>
+                <label for="comentarios">Comentarios</label>
                 <textarea rows="7" cols="50" name="comentarios" id="comentarios"></textarea>
             </div>
             <div>
@@ -49,6 +49,47 @@
                 <input type="reset" value="Borrar" id="borrar" name="borrar">
             </div>
         </fieldset>
+    </form>
+    <form class="pedidoDePizza2" id="simple" name="simple" method="post" action="">
+            <h1>- Pedido de Pizza -</h1>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div>
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion">
+            </div>
+            <div class="ingredientes">
+                <label for="ingredientes">Ingredientes</label>
+                <input type="checkbox" name="ingredientes" id="ingredientes" value="queso"></input>
+                <label for="ingredientes">Queso</label>
+                <input type="checkbox" name="ingredientes" id="ingredientes" value="pimiento"></input>
+                <label for="ingredientes">Pimiento</label>
+                <input type="checkbox" name="ingredientes" id="ingredientes" value="cebolla"></input>
+                <label for="ingredientes">Cebolla</label>
+            </div>
+            <div class="tamanio">
+                <label for="tamanio">Tamaño</label>
+                <input type="radio" name="tamanio" id="tamanio" value="pequenia">Pequeña</input>
+                <input type="radio" name="tamanio" id="tamanio" value="mediana">Mediana</input>
+                <input type="radio" name="tamanio" id="tamanio" value="grande">Grande</input>
+            </div>
+            <div class="tarjeta">
+                <label for="tarjeta">Forma de pago</label>
+                <select name="tarjeta" id="tarjeta">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                </select>
+            </div>
+            <div>
+                <label for="comentarios">Instrucciones especiales</label>
+                <textarea rows="7" cols="50" name="comentarios" id="comentarios"></textarea>
+            </div>
+            <div class="enviarResetear">
+                <input class="enviar" type="submit" id="enviar" name="enviar">
+                <input type="reset" value="Borrar" id="borrar" name="borrar">
+            </div>
     </form>
 </body>
 </html>
