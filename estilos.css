@@ -1,32 +1,45 @@
 body{
     background-color: lightgrey;
     color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 .pedidoDePizza1{
     background-color: darkblue;
     padding: 2%;
     border: solid thin black;
+    width: 50%;
+    margin-left: 25%;
 }
 .pedidoDePizza1 div{
     padding: 10px 0 10px 0;
 }
+.pedidoDePizza1 textarea{
+   margin-left: 5%;
+}
+.pedidoDePizza1 input{
+    margin-left: 5%;
+ }
+ .pedidoDePizza1 select{
+    margin-left: 5%;
+ }
 .pedidoDePizza1 label{
-    display: inline-block;
-    width: 10%;
+    display: block;
+    width: 13%;
     float: left;
 }
-.ingredientes label {
-    display: inline;
-    float: none;
-}
-.direccion input {
+.pedidoDePizza1 .direccion input {
     width: 300px;
+}
+.pedidoDePizza1 .enviarResetear input{
+    margin: auto;
 }
 .pedidoDePizza2{
     background-color: #ffcc99;
     padding: 2%;
     margin-top: 2%;
-    border: solid thin black;
+    border: solid thin blue;
+    width: 50%;
+    margin-left: 25%;
 }
 .pedidoDePizza2 h1{
     background-color: orange;
@@ -34,6 +47,92 @@ body{
     color: black;
     padding: 3px;
 }
-.enviarResetear input{
+.pedidoDePizza2 .enviarResetear input{
+    margin-right: 25%;
+}
+.pedidoDePizza2 .nombreDireccion{
+    margin-bottom: 1%;
+}
+.pedidoDePizza2 .nombreDireccion label{
+    background-color: maroon;
+    padding: 2px;
+    margin-right: 2%;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+}
+.pedidoDePizza2 .nombreDireccion input{
+    width: 400px;
+    display: inline-block;
+    clear: none;
+}
+.pedidoDePizza2 .ingredientes{
+    display: inline-block;
+    width: 32%;
+    margin-bottom: 20px;
+}
+.pedidoDePizza2 .ingredientes label{
+    display: inline-block;
+    background-color: maroon;
+    width: 120px;
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 20px;
+    width: 95%;
+}
+.pedidoDePizza2 .ingredientes div{
+    display: block;
+}
+.pedidoDePizza2 .tamanio{
+    display: inline-block;
+    clear: none;
+    width: 32%;
+}
+.pedidoDePizza2 .tamanio label{
+    display: inline-block;
+    background-color: maroon;
+    width: 120px;
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 20px;
+    width: 95%;
+}
+.pedidoDePizza2 .tamanio div{
+    display: block;
+}
+.pedidoDePizza2 .tarjeta{
+    display: inline-block;
+    clear: none;
+    width: 32%;
+    position: relative;
+    top: -42px;
+}
+.pedidoDePizza2 .tarjeta label{
+    display: inline-block;
+    background-color: maroon;
+    width: 120px;
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 20px;
+    width: 95%;
+}
+.pedidoDePizza2 .instrucciones label{
+    display: inline-block;
+    background-color: maroon;
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 20px;
+}
+.pedidoDePizza2 .instrucciones textarea{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.pedidoDePizza2 .enviar{
+    margin-left: 25%;
+}
+.pedidoDePizza2 .resetear{
+    float: right;
     margin-right: 25%;
 }

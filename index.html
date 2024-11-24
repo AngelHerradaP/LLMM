@@ -12,20 +12,21 @@
             <legend>Pedido de Pizza</legend>
             <div>
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre">
+                <input type="text" id="nombre" name="nombre" required>
             </div>
             <div class="direccion">
                 <label for="direccion">Dirección</label>
-                <input type="text" id="direccion" name="direccion">
+                <input type="text" id="direccion" name="direccion" required>
             </div>
-            <div class="ingredientes">
+            <div>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" min="25" max="65" required>
+            </div>
+            <div>
                 <label for="ingredientes">Ingredientes</label>
-                <input type="radio" name="ingredientes" id="ingredientes" value="queso"></input>
-                <label for="ingredientes">queso</label>
-                <input type="radio" name="ingredientes" id="ingredientes" value="cebolla"></input>
-                <label for="ingredientes">cebolla</label>
-                <input type="radio" name="ingredientes" id="ingredientes" value="pimiento"></input>
-                <label for="ingredientes">pimiento</label>
+                <input type="radio" name="ingredientes" id="ingredientes" value="queso">queso</input>
+                <input type="radio" name="ingredientes" id="ingredientes" value="cebolla">cebolla</input>
+                <input type="radio" name="ingredientes" id="ingredientes" value="pimiento">pimiento</input>
             </div>
             <div>
                 <label for="tamanio">Tamaño</label>
@@ -44,7 +45,7 @@
                 <label for="comentarios">Comentarios</label>
                 <textarea rows="7" cols="50" name="comentarios" id="comentarios"></textarea>
             </div>
-            <div>
+            <div class="enviarResetear">
                 <input type="submit" id="enviar" name="enviar">
                 <input type="reset" value="Borrar" id="borrar" name="borrar">
             </div>
@@ -52,43 +53,58 @@
     </form>
     <form class="pedidoDePizza2" id="simple" name="simple" method="post" action="">
             <h1>- Pedido de Pizza -</h1>
-            <div>
+            <div class="nombreDireccion">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre">
+                <input type="text" id="nombre" name="nombre" required>
             </div>
-            <div>
+            <div class="nombreDireccion">
                 <label for="direccion">Dirección</label>
-                <input type="text" id="direccion" name="direccion">
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div class="nombreDireccion">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" min="25" max="65" required>
             </div>
             <div class="ingredientes">
                 <label for="ingredientes">Ingredientes</label>
-                <input type="checkbox" name="ingredientes" id="ingredientes" value="queso"></input>
-                <label for="ingredientes">Queso</label>
-                <input type="checkbox" name="ingredientes" id="ingredientes" value="pimiento"></input>
-                <label for="ingredientes">Pimiento</label>
-                <input type="checkbox" name="ingredientes" id="ingredientes" value="cebolla"></input>
-                <label for="ingredientes">Cebolla</label>
+                <div>
+                <input type="checkbox" name="ingredientes" id="ingredientes" value="queso">Queso</input>
+                </div>
+                <div>
+                <input type="checkbox" name="ingredientes" id="ingredientes" value="pimiento">Pimiento</input>
+                </div>
+                <div>
+                <input type="checkbox" name="ingredientes" id="ingredientes" value="cebolla">Cebolla</input>
+                </div>
             </div>
             <div class="tamanio">
                 <label for="tamanio">Tamaño</label>
+                <div>
                 <input type="radio" name="tamanio" id="tamanio" value="pequenia">Pequeña</input>
+                </div>
+                <div>
                 <input type="radio" name="tamanio" id="tamanio" value="mediana">Mediana</input>
+                </div>
+                <div>
                 <input type="radio" name="tamanio" id="tamanio" value="grande">Grande</input>
+                </div>
             </div>
             <div class="tarjeta">
                 <label for="tarjeta">Forma de pago</label>
+                <div>
                 <select name="tarjeta" id="tarjeta">
                     <option value="visa">Visa</option>
                     <option value="mastercard">Mastercard</option>
                 </select>
+                </div>
+            </div>
+            <div class="instrucciones">
+                <label for="comentarios">Instrucciones especiales</label>
+                <textarea rows="7" cols="60" name="comentarios" id="comentarios"></textarea>
             </div>
             <div>
-                <label for="comentarios">Instrucciones especiales</label>
-                <textarea rows="7" cols="50" name="comentarios" id="comentarios"></textarea>
-            </div>
-            <div class="enviarResetear">
                 <input class="enviar" type="submit" id="enviar" name="enviar">
-                <input type="reset" value="Borrar" id="borrar" name="borrar">
+                <input class="resetear" type="reset" value="Borrar" id="borrar" name="borrar">
             </div>
     </form>
 </body>
