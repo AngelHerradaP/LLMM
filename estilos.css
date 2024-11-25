@@ -13,15 +13,9 @@ body{
 .pedidoDePizza1 div{
     padding: 10px 0 10px 0;
 }
-.pedidoDePizza1 textarea{
+.pedidoDePizza1 textarea, input, select{
    margin-left: 5%;
 }
-.pedidoDePizza1 input{
-    margin-left: 5%;
- }
- .pedidoDePizza1 select{
-    margin-left: 5%;
- }
 .pedidoDePizza1 label{
     display: block;
     width: 13%;
@@ -68,7 +62,7 @@ body{
 }
 .pedidoDePizza2 .ingredientes{
     display: inline-block;
-    width: 32%;
+    width: 30%;
     margin-bottom: 20px;
 }
 .pedidoDePizza2 .ingredientes label{
@@ -86,7 +80,7 @@ body{
 .pedidoDePizza2 .tamanio{
     display: inline-block;
     clear: none;
-    width: 32%;
+    width: 30%;
 }
 .pedidoDePizza2 .tamanio label{
     display: inline-block;
@@ -103,18 +97,17 @@ body{
 .pedidoDePizza2 .tarjeta{
     display: inline-block;
     clear: none;
-    width: 32%;
+    width: 38.5%;
     position: relative;
     top: -42px;
 }
 .pedidoDePizza2 .tarjeta label{
     display: inline-block;
     background-color: maroon;
-    width: 120px;
     text-align: center;
     padding: 2px;
     margin-bottom: 20px;
-    width: 95%;
+    width: 100%;
 }
 .pedidoDePizza2 .instrucciones label{
     display: inline-block;
