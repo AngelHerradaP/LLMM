@@ -95,8 +95,6 @@ body{
 .pedidoDePizza2 .tarjeta{
     display: inline-block;
     width: 38.5%;
-    position: relative;
-    top: -42px;
 }
 .pedidoDePizza2 .tarjeta label{
     display: inline-block;
