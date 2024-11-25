@@ -58,7 +58,6 @@ body{
 .pedidoDePizza2 .nombreDireccion input{
     width: 400px;
     display: inline-block;
-    clear: none;
 }
 .pedidoDePizza2 .ingredientes{
     display: inline-block;
@@ -79,7 +78,6 @@ body{
 }
 .pedidoDePizza2 .tamanio{
     display: inline-block;
-    clear: none;
     width: 30%;
 }
 .pedidoDePizza2 .tamanio label{
@@ -96,7 +94,6 @@ body{
 }
 .pedidoDePizza2 .tarjeta{
     display: inline-block;
-    clear: none;
     width: 38.5%;
     position: relative;
     top: -42px;
