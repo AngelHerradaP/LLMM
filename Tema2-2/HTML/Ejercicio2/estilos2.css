@@ -1,0 +1,59 @@
+#container{
+    display: grid;
+    grid-template: 1fr 40px/1fr 200px;
+    grid-template-areas: 
+    "header header"
+    "nav aside"
+    "portada aside"
+    "a1 aside"
+    "a2 aside"
+    "footer footer";
+    }
+    header{
+        grid-area: header;
+        text-align: center;
+        color: darkblue;
+    }
+    nav{
+        grid-area: nav;
+        background-color: green;
+    }
+    nav li{
+        display: inline;
+        background-color: greenyellow;
+        color: rgb(41, 130, 0);
+        margin: 5px;
+    }
+    #portada{
+        grid-area: portada;
+    }
+    #a1{
+        grid-area: a1;
+        background-color: lightgrey;
+        border: solid thin;
+        text-align: center;
+        padding: 3px 20px 100px 20px;
+    }
+    #a2{
+        grid-area: a2;
+        background-color: lightgrey;
+        border: solid thin;
+        text-align: center;
+        padding: 3px 20px 100px 20px;
+    }
+    aside{
+        grid-area: aside;
+        background-color: pink;
+        color: white;
+        text-align: center;
+    }
+    aside div{
+        border: solid blue;
+        margin: 50% auto;
+    }
+    footer{
+        grid-area: footer;
+        background-color: aquamarine;
+        color: blue;
+        text-align: center;
+    }

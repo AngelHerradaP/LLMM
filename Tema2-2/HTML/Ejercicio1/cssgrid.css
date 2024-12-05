@@ -3,22 +3,24 @@ body {
   background:rgba(241, 239, 239, 0.645)}
 
 #container {
+    width: 85%;
     display: grid;
-    grid-template: 200px 1fr / repeat(3 1fr);
+    grid-template: repeat(2 1fr) / repeat(3 1fr);
     gap: 10px 10px;
-    margin:20px;}
+    margin:20px auto;
+}
   
 header { 	
     grid-column: span 2;
     color: white; 
     background-color: #0D47A1; 
-    padding: 5px; }
- 
+    padding: 5px; 
+}
 footer { 
     grid-column: span 2;
     background-color: #2196F3; 
-    padding: 5px;}
-  
+    padding: 5px;
+}
 article { 	
     background-color: #BBDEFB; 
     padding: 5px;
