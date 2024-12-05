@@ -1,0 +1,38 @@
+h1{
+    background-color: rgb(44, 44, 44);
+    padding: 12px;
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+nav{
+    margin-top: 2px;
+    background-color: rgb(44, 44, 44);
+    padding: 8px;
+    text-align: right;
+    color: white;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+p{
+    text-align: justify;
+    font-size: 20px;
+}
+img{
+    display: block;
+    margin: auto;
+}
+footer a{
+    text-decoration: underline;
+    color: black;
+}
+footer a:hover{
+    text-decoration: none;
+    color: red;
+}

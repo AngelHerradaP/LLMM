@@ -1,0 +1,93 @@
+body{
+    background-color: lightgrey;
+}
+h1{
+    background-color: rgb(44, 44, 44);
+    padding: 12px;
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+#formulario{
+    background-color: lightgrey;
+    color: black;
+}
+nav{
+    margin-top: 2px;
+    background-color: rgb(44, 44, 44);
+    padding: 8px;
+    text-align: right;
+    color: white;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+hr{
+    border-style: solid;
+}
+form{
+    display: block;
+    width: 70%;
+    margin-top: 10px;
+    border: solid grey;
+    padding: 10px;
+}
+label{
+    display: inline-block;
+    width: 15%;
+    margin-bottom: 10px;
+}
+input{
+    border: solid red thin;
+}
+.web input{
+    display: inline-block;
+    width: 50%;
+}
+.telefono input{
+    display: inline-block;
+    width: 50%;
+}
+.guia{
+    display: inline;
+    border: solid thin grey;
+    padding: 0 50px 0 50px;
+}
+.pago{
+    display: inline;
+    border: solid thin grey;
+    padding: 0 50px 0 50px;
+    margin-left: 5px;
+}
+.altaBorrar{
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+.altaBorrar .alta{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 50px 10px 50px;
+    border: none;
+}
+.altaBorrar .borrar{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 50px 10px 50px;
+    border: none;
+}
+footer a{
+    text-decoration: underline;
+    color: black;
+}
+footer a:hover{
+    text-decoration: none;
+    color: red;
+}

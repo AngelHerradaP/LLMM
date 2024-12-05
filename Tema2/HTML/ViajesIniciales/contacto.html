@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes por el mundo: Contacta con nosotros</title>
+    <link rel="stylesheet" href="./assets/css/contacto.css">
+</head>
+<body>
+    <h1>Contacta con nosotros</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="destino1.html">Japón</a>
+        <a href="destino2.html">París</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <form id="contacto" name="contacto" method="post" action="http://testform.montysoft.org/">
+            <h1 id="formulario">Formulario</h1>
+            <hr>
+            <div>
+                <label for="email">Email</label>
+                <input required placeholder="Introducir Email" type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="contraseña">Contraseña</label>
+                <input required placeholder="Introducir contraseña" type="password" id="contraseña" name="contraseña">
+            </div>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div>
+                <label for="color">Color preferido:</label>
+                <input type="color" id="color" name="color">
+            </div>
+            <div class="web">
+                <label for="web">Web:</label>
+                <input type="text" id="web" name="web">
+            </div>
+            <div class="telefono">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div>
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            </div>
+            <div>
+                <label for="transporte">Transporte:</label>
+                <input type="checkbox" name="transporte" id="transporte" value="coche">Coche</input>
+                <input type="checkbox" name="transporte" id="transporte" value="barco">Barco</input>
+                <input type="checkbox" name="transporte" id="transporte" value="tren" checked>Tren</input>
+                <input type="checkbox" name="transporte" id="transporte" value="avion">Avión</input>
+            </div>
+            <div class="guia">
+                <label for="guia">Opción a Guía:</label>
+                <input type="radio" name="guia" id="guia" value="si" checked>Si</input>
+                <input type="radio" name="guia" id="guia" value="no">No</input>    
+            </div>
+            <div class="pago">
+                <label for="pago">Forma de pago</label>
+                <select name="pago" id="pago">
+                    <option value="al_contado">Al contado</option>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                </select>
+            </div>
+            <div class="altaBorrar">
+                <input class="alta" type="submit" id="enviar" name="enviar" value="Darme de alta">
+                <input class="borrar" type="reset" id="borrar" name="borrar" value="Borrar!">
+            </div>
+    </form>
+    <footer>
+        <p>Enlaces de interés:</p>
+        <a href="https://www.skyscanner.es/">Vuelos baratos</a>
+        <a href="https://www.booking.com/">Hoteles baratos</a>
+    </footer>  
+</body>
+</html>
