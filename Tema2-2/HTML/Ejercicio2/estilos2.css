@@ -49,7 +49,7 @@
     }
     aside div{
         border: solid blue;
-        margin: 50% auto;
+        margin: 50% 10px;
     }
     footer{
         grid-area: footer;
