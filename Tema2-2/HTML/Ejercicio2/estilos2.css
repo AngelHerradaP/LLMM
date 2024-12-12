@@ -1,59 +1,87 @@
-#container{
+#container {
     display: grid;
-    grid-template: 1fr 40px/1fr 200px;
-    grid-template-areas: 
-    "header header"
-    "nav aside"
-    "portada aside"
-    "a1 aside"
-    "a2 aside"
-    "footer footer";
-    }
-    header{
-        grid-area: header;
-        text-align: center;
-        color: darkblue;
-    }
-    nav{
-        grid-area: nav;
-        background-color: green;
-    }
-    nav li{
-        display: inline;
-        background-color: greenyellow;
-        color: rgb(41, 130, 0);
-        margin: 5px;
-    }
-    #portada{
-        grid-area: portada;
-    }
-    #a1{
-        grid-area: a1;
-        background-color: lightgrey;
-        border: solid thin;
-        text-align: center;
-        padding: 3px 20px 100px 20px;
-    }
-    #a2{
-        grid-area: a2;
-        background-color: lightgrey;
-        border: solid thin;
-        text-align: center;
-        padding: 3px 20px 100px 20px;
-    }
-    aside{
-        grid-area: aside;
-        background-color: pink;
-        color: white;
-        text-align: center;
-    }
-    aside div{
-        border: solid blue;
-        margin: 50% 10px;
-    }
-    footer{
-        grid-area: footer;
-        background-color: aquamarine;
-        color: blue;
-        text-align: center;
-    }
+    grid-template: 1fr 40px/1fr 300px;
+    grid-template-areas:
+        "header header"
+        "nav aside"
+        "section aside"
+        "section aside"
+        "section aside"
+        "footer footer";
+}
+header{
+    grid-area: header;
+    text-align: center;
+}
+h1{
+    color: darkblue;
+    font-size: 30px;
+    font-weight: bolder;
+}
+nav{
+    grid-area: nav;
+    background-color: #138808;
+}
+nav li{
+    display: inline;
+    background-color: #4CBB17;
+    color: yellow;
+    margin: 5px;
+}
+#cajaPortada{
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background-color: #D2FFAB;
+}
+#cajaPortada h2{
+    text-align: center;
+    color: darkolivegreen;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#cajaPortada article{
+    padding-left: 50px;
+    text-align: justify;
+}
+#cajaPortada h3{
+    color: purple;
+    font-weight: bolder;
+}
+#cajaPortada p{
+    border: 5px solid lightskyblue;
+    background-color: white;
+    color: black;
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    float: left;
+}
+aside{
+    grid-area: aside;
+    background-color: pink;
+    padding: 0 20px 0 20px;
+}
+#publicidad{
+    border: solid blue;
+    margin: 50% auto;
+    background-color: white;
+    padding: 0 20px 0 20px;
+    height: 60%;
+}
+#publicidad h3{
+    font-size: 15px;
+}
+#anunciar h2{
+    padding-left: 20px;
+}
+footer{
+    grid-area: footer;
+    background-color: aquamarine;
+    color: blue;
+    text-align: center;
+}
+footer h2{
+    font-size: 12px;
+}

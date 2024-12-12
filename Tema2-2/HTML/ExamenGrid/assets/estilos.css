@@ -1,0 +1,72 @@
+body{
+    background-color: black;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows:  120px 120px 120px;
+    grid-template-areas: 
+    "a1 a1 a1 a2 a3"
+    "a4 a5 a6 a7 a8"
+    "a9 a9 a10 a11 a11";
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-style: italic;
+    font-size: 10px;
+} 
+.a1{
+    grid-area: a1;
+    font-size: 20px;
+}
+.a1 #azul{
+    color: aqua;
+}
+.a2{
+    grid-area: a2;
+    background-color: darkblue;
+}
+.a3{
+    grid-area: a3;
+    background-image: url(./imagenes/fondo1.jpg);
+}
+.a4{
+    grid-area: a4;
+    background-image: url(./imagenes/fondo2.jpg);
+}
+.a5{
+    grid-area: a5;
+    background-color: blue;
+}
+.a6{
+    grid-area: a6;
+    background-color: cadetblue;
+}
+.a7{
+    grid-area: a7;
+    background-image: url(./imagenes/fondo3.jpg);  
+}
+.a8{
+    grid-area: a8;
+    background-color: orange;
+}
+.a9{
+    grid-area: a9;
+    background-image: url(./imagenes/fondo4.jpg);
+}
+.a10{
+    grid-area: a10;
+    background-color: darkblue;
+}
+.a11{
+    grid-area: a11;
+    background-image: url(./imagenes/fondo5.jpg);
+}
+.a3, .a4, .a7, .a9, .a11{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.a2, .a5, .a6, .a8, .a10{
+    padding: 10px;
+}
