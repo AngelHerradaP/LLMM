@@ -1,0 +1,14 @@
+{ "titulo": "Los Ojos de Julia", 
+"anyo": 2010, 
+"director": { 
+"nombre": "Guillem Morales", 
+"nacionalidad": "Español" },
+"reparto":  {
+    "nombre": "Belén Rueda",
+    "personaje": "Julia" ,
+    "nombre": "Lluis Homar", 
+    "personaje": "Isaac" , 
+    "nombre": "Francesc Orella", 
+    "personaje": "Inspector Dimas"
+    }
+} 
