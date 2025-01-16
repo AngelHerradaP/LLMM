@@ -1,0 +1,44 @@
+{
+    "estudiantes":[
+        {
+            "nombre_titulacion":"Tecnico Informatico",
+            "nombre_estudiante":{
+                "apellidos":"Gaspar",
+                "nombre":"Ana"
+            },
+            "email":"ijusbdiabs@gmail.com",
+            "repite":false,
+            "nombre_amigas":["Laura","Zamira","Maria"],
+            "asignaturas":[
+                {
+                    "nombre_asignatura":"matematicas",
+                    "nota":4.99
+                },
+                {
+                    "nombre_asignatura":"fisica",
+                    "nota":7
+                }
+            ]
+        },
+        {
+            "nombre_titulacion":"Tecnico Informatico",
+            "nombre_estudiante":{
+                "apellidos":"Vallejo",
+                "nombre":"Pablo"
+            },
+            "email":"iwbamasd@gmail.com",
+            "repite":true,
+            "nombre_amigas":["Roberto","Samuel","Sandra"],
+            "asignaturas":[
+                {
+                    "nombre_asignatura":"matematicas",
+                    "nota":8.6
+                },
+                {
+                    "nombre_asignatura":"fisica",
+                    "nota":3.2
+                }
+            ]
+        }
+    ]
+}
