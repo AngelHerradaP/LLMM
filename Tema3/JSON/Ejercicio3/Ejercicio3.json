@@ -1,0 +1,32 @@
+{
+    "apellidos_nombres":"Roberto Castillo",
+    "datos_contacto":{
+        "correo":"lknsdflk@gmail.com",
+        "telefono":"9823123"
+    },
+    "ciudad_origen":"Malaga",
+    "nombres":["Alejandro","Jose","Carlos"],
+    "gasto_total":879,
+    "relacion":[
+        {
+            "satisfecho":true,
+            "ciudad":"Malaga",
+            "hotel":{
+                "nombre":"Ilunion",
+                "estrellas":5,
+                "precio":36,
+                "numero_noches":1
+            }
+        },
+        {
+            "satisfecho":false,
+            "ciudad":"Torremolinos",
+            "hotel":{
+                "nombre":"Acapulco",
+                "estrellas":3,
+                "precio":56,
+                "numero_noches":3
+            }
+        }
+    ]
+}
