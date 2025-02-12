@@ -19,6 +19,15 @@ body{
     margin: auto;
 }
 
+img{
+    width: 200px;
+}
+
+button p{
+     padding: 0px;
+}
+
+
 p{
     padding-top:170px;
 }
@@ -28,10 +37,12 @@ p{
 }
 
 .a2{
+    align-content: center;
     grid-area: "a2";
 }
 
 .a3{
+    align-content: center;
     grid-area: "a3";
 }
 
@@ -40,6 +51,7 @@ p{
 }
 
 .a5{
+    align-content: center;
     grid-area: "a5";
 }
 
