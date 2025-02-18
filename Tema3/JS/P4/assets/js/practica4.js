@@ -3,28 +3,12 @@ const PARRAFO = document.querySelector("#capa1");
 const FOTO_INVISIBLE = document.querySelector("#capa3");
 const EDAD = document.querySelector("#capa5");
 const FONDO = document.querySelector("#negro");
+const BOTON_FONDO = document.querySelector(".botonFondo");
 const A = document.querySelector("#capa9");
 
 //Capa 1
-UN_CLICK.addEventListener("click", () => alert('Has realizado un click'));
-
-//Capa 2
-function maximo() {
-    let num = parseInt(prompt('Introduce un número:'));
-    let num2 = parseInt(prompt('Introduce un número:'));
-
-    if (!isNaN(num)) {
-        if (!isNaN(num2)) {
-            alert("El número máximo es " + Math.max(num, num2));
-        } else {
-            alert('Introduce un número válido.');
-        }
-    } else {
-        alert('Introduce un número válido.');
-    }
-}
-
-NUMERO_MAX.addEventListener("click", maximo);
+PARRAFO.addEventListener("mouseenter", () => {PARRAFO.style.color = "red"});
+PARRAFO.addEventListener("mouseleave", () => {PARRAFO.style.color = "black"});
 
 //Capa 3
 function parImpar() {
@@ -41,19 +25,19 @@ function parImpar() {
 
 NUMERO_PAR.addEventListener("mouseleave", parImpar);
 
-//Capa 4
+//Capa 5
 DOBLE_CLICK.addEventListener("dblclick", () => alert('Has realizado doble click'));
 
-//Capa 5
-let i = 0;
-function cuentaClicks() {
-  i++;
-  alert("Clicks: " + i);
+//Capa 7
+
+function cambiaFondo() {
+
+  
 }
 
-BOTON_CONTADOR.addEventListener("click", cuentaClicks);
+BOTON_FONDO.addEventListener("click", cambiaFondo);
 
-//Capa 6
+//Capa 9
 function multiplicar() {
     let num = parseInt(prompt('Introduce un número:'));
    let num2 = parseInt(prompt('Introduce un número:'));
