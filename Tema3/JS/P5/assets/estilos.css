@@ -1,0 +1,19 @@
+div{
+    margin-bottom: 15px;
+}
+
+.botonCalcular{
+    background-color: rgb(100, 213, 100);
+    color: white;
+    border-style: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container{
+    border-style: solid;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    margin: auto;
+}

@@ -37,7 +37,9 @@ button p{
     grid-area: "negro";
     background-color: black;
 }
-
+.rojo{
+    background-color: red;
+}
 .a3{
     align-content: center;
     grid-area: "a3";
@@ -46,6 +48,11 @@ button p{
 .a5{
     align-content: center;
     grid-area: "a5";
+    font-weight: bold;
+}
+
+.input{
+    border-style: solid;
 }
 
 .a7{

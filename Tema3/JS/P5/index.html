@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/estilos.css">
+    <title>Practica 5</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+        <div>
+            <label>Numero 1:</label>
+            <input class="numero1" type="text" required>
+        </div>
+        <div>
+            <label>Numero 2:</label>
+            <input class="numero2" type="text" required>
+        </div>
+        <div>
+            <label>Operacion:</label>
+            <select name="operacion" id="operacion">
+                <option value="suma">suma</option>
+                <option value="resta">resta</option>
+                <option value="multiplicacion">multiplicacion</option>
+                <option value="division">division</option>
+            </select>
+        </div>
+        <div>
+            <label>Resultado:</label>
+            <input class="resultado" type="text" readonly>
+        </div>
+        <button class="botonCalcular">Calcular</button>
+    </div>
+
+    <script type="text/javascript" src="./assets/js/practica5.js"></script>
+</body>
+</html>

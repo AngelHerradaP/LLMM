@@ -1,53 +1,88 @@
-//Declaramos las constantes
-const PARRAFO = document.querySelector("#capa1");
-const FOTO_INVISIBLE = document.querySelector("#capa3");
-const EDAD = document.querySelector("#capa5");
-const FONDO = document.querySelector("#negro");
-const BOTON_FONDO = document.querySelector(".botonFondo");
-const A = document.querySelector("#capa9");
-
 //Capa 1
+const PARRAFO = document.querySelector("#capa1");
+
 PARRAFO.addEventListener("mouseenter", () => {PARRAFO.style.color = "red"});
 PARRAFO.addEventListener("mouseleave", () => {PARRAFO.style.color = "black"});
 
-//Capa 3
-function parImpar() {
-    let num = parseInt(prompt('Introduce un número:'));
+//Capa 2
+
+const FOTO_INVISIBLE = document.querySelector("#capa3");
+
+FOTO_INVISIBLE.addEventListener("mouseenter", () => cambiarImagen(FOTO_INVISIBLE));
+
+function cambiarImagen(FOTO_INVISIBLE) {
+  
+  let nombreImagen = FOTO_INVISIBLE.src.split("/").pop();
+  if (nombreImagen == "1.jpg") {
     
-    if (!isNaN(num)){
-      if(num %2 == 0){
-        alert('Es par.');
-      } else{
-        alert('Es impar');
-      }
-   }
+    FOTO_INVISIBLE.src = "./assets/img/2.jpg";
+    
+  }else{
+
+    FOTO_INVISIBLE.src = "./assets/img/1.jpg";
+  }
 }
 
-NUMERO_PAR.addEventListener("mouseleave", parImpar);
+//Capa 3
+const BOTON_EDAD = document.querySelector(".botonFormulario");
+
+BOTON_EDAD.addEventListener("click", comprobarFormulario);
+
+function comprobarFormulario() {
+  
+  let input = document.querySelector(".input");
+  let numeroInput = input.value;
+  let texto = document.querySelector("#texto");
+  let comprobarCadena = numeroInput.length == 0 || isNaN(numeroInput);
+
+  if (comprobarCadena) {
+    
+    input.style.borderColor = "red";
+    texto.textContent = "Introduce un número valido";
+  }else if (numeroInput >= 1 && numeroInput <= 100) {
+    input.style.borderColor = "green";
+    texto.textContent = "Número correcto";
+    
+  }else {
+
+    input.style.borderColor = "red";
+    texto.textContent = "Introduce un valor entre 1 y 100";
+  }
+}
+
+//Capa 4
+const FONDO = document.querySelectorAll(".negro");
+const BOTON_FONDO = document.querySelector("#botonFondo");
+
+BOTON_FONDO.addEventListener("click", () => cambiaFondo(FONDO));
+
+function cambiaFondo(FONDO) {
+
+  FONDO.forEach(element => {
+    element.classList.toggle("rojo");
+  });
+};
 
 //Capa 5
-DOBLE_CLICK.addEventListener("dblclick", () => alert('Has realizado doble click'));
+const CAPA9 = document.querySelector(".a9");
+const BOTON1 = document.querySelector(".b1");
+const BOTON2 = document.querySelector(".b2");
+const BOTON3 = document.querySelector(".b3");
 
-//Capa 7
+BOTON1.addEventListener("click", () => {
 
-function cambiaFondo() {
-
+  CAPA9.style.borderColor = "black";
+  CAPA9.style.color = "white";
+  CAPA9.style.backgroundColor = "black";
+});
+BOTON2.addEventListener("click", () => {
   
-}
-
-BOTON_FONDO.addEventListener("click", cambiaFondo);
-
-//Capa 9
-function multiplicar() {
-    let num = parseInt(prompt('Introduce un número:'));
-   let num2 = parseInt(prompt('Introduce un número:'));
+  CAPA9.style.color = "black";
+  CAPA9.style.backgroundColor = "white";
+});
+BOTON3.addEventListener("click", () => {
   
-    if (!isNaN(num)) {
-      if (!isNaN(num2)) {
-        let multiplicacion = num * num2;
-        alert("el resultado es: " + multiplicacion);
-      }
-    }
-}
-
-MULTIPLICACION.addEventListener("mouseenter", multiplicar);
+  CAPA9.style.borderColor = "black";
+  CAPA9.style.color = "red";
+  CAPA9.style.backgroundColor = "grey";
+});
