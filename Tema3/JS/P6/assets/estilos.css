@@ -1,0 +1,20 @@
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+.buscador{
+    margin: auto;
+    padding: 20px;
+    width: 250px;
+    border: solid thin;
+}
+
+table{
+    margin-top: 20px;
+    width: 100%;
+}
+th{
+    border: solid thin;
+}
+

@@ -12,16 +12,19 @@ let seleccion;
 function suma() {
     
     RESULTADO.value = resNum1 + resNum2;
+    TEXTO_ERROR.textContent = "";
 }
 
 function resta() {
     
     RESULTADO.value = resNum1 - resNum2;
+    TEXTO_ERROR.textContent = "";
 }
 
 function multiplicacion() {
     
     RESULTADO.value = resNum1 * resNum2;
+    TEXTO_ERROR.textContent = "";
 }
 
 function division() {
@@ -34,6 +37,7 @@ function division() {
     }else{
 
         RESULTADO.value = resNum1 / resNum2;
+        TEXTO_ERROR.textContent = "";
     }
 }
 
@@ -65,4 +69,4 @@ function calcular() {
     }
 }
 
-BOTON_CALCULAR.addEventListener("click", ()=> calcular());
+BOTON_CALCULAR.addEventListener("click", calcular);

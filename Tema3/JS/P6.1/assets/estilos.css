@@ -1,0 +1,40 @@
+body{
+    color: white;
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+}
+
+.buscador{
+    width: 300px;
+    margin: auto;
+}
+
+table{
+    margin: 20px auto auto auto;
+}
+th, td{
+    border: solid thin;
+}
+
+th{
+    width: 100px;
+}
+
+td{
+    width: 400px;
+    padding: 5px;
+    height: 50px;
+}
+
+select{
+    width: 100%;
+    margin: auto;
+}
+
+.error{
+    color: red;
+    text-align: center;
+}
