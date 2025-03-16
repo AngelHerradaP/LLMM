@@ -1,12 +1,12 @@
 const btn = document.querySelector(".botonBuscar");
 btn.addEventListener("click", buscarPelicula);
 
-
+const desplegable = document.querySelector(".desplegable");
+desplegable.addEventListener("click", actualizarDesplegable);
 
 const titulo = document.querySelector(".titulo");
 const anyo = document.querySelector(".anyo");
 const duracion = document.querySelector(".duracion");
-const desplegable = document.querySelector(".desplegable");
 const casillaNota = document.querySelector(".casillaNota");
 const error = document.querySelector(".error");   
 const medioValoracion = new Map();
@@ -41,14 +41,14 @@ async function buscarPelicula() {
             desplegable.innerHTML = desplegable.innerHTML + `<option>${data.Ratings[index].Source}</option>`;
             medioValoracion.set(data.Ratings[index].Source, data.Ratings[index].Value);
         };
-
-        casillaNota.innerHTML = `La valoracion es de: ${medioValoracion.get(desplegable.value)}`;
+        
+        actualizarDesplegable();
     }
 }
 
-function calcularValoracion() {
+function actualizarDesplegable() {
 
-    
+    casillaNota.innerHTML = `La valoracion de ${desplegable.value} es de: ${medioValoracion.get(desplegable.value)}`;
 }
 
 function noDefinido(textoError) {
