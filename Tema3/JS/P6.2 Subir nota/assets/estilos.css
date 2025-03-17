@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+table{
+    margin: 20px auto auto auto;
+}
+th, td{
+    border: solid thin;
+}
+
+th{
+    width: 100px;
+}
+
+td{
+    width: 500px;
+    padding: 5px;
+    height: 70px;
+}
+
+.filaImagen{
+    height: 400px;
+}
+
+.containerMale{
+    color: green;
+}
+
+.containerFemale{
+    color: yellow;
+}
