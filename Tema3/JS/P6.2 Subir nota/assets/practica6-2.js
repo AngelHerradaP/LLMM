@@ -1,8 +1,8 @@
 const DESPLEGABLE_PERSONAJE = document.querySelector("#personaje");
 const BTN = document.querySelector(".botonBuscar");
 const TABLA_EPISODIO = document.querySelector(".tablaEpisodios");
-let BTN_IMAGEN;
 let TABLA_EPISODIO_DEFAULT = TABLA_EPISODIO.innerHTML;
+let BTN_IMAGEN = document.querySelectorAll(".btnImagen");
 let color;
 let nombreId = new Map();
 let numeroPersonaje;
@@ -28,27 +28,28 @@ async function buscarEpisodio() {
             TABLA_EPISODIO.innerHTML = TABLA_EPISODIO.innerHTML + 
             `<tr>
                 <td>${dataCharacter.name}</td>
-                <td><img class="btnImagen" title="${dataCharacter.id}" src="${dataCharacter.image}" width="100px" height="100px"></img></td>
+                <td><img class="btnImagen" src="${dataCharacter.image}" width="100px" height="100px"></img></td>
             </tr>`;
             DESPLEGABLE_PERSONAJE.innerHTML = DESPLEGABLE_PERSONAJE.innerHTML + 
             `<option value="${dataCharacter.id}"> 
                 ${dataCharacter.name}
             </option>`;
-            nombreId.set(dataCharacter.id, dataCharacter.id);
+            nombreId.set(index, dataCharacter.id);
         }
-        BTN_IMAGEN = document.querySelectorAll(".btnImagen");
-        BTN_IMAGEN.forEach(element => {
-            element.addEventListener("click", numeroPersonaje = nombreId.get(element.title));
+        let BTN_IMAGEN = document.querySelectorAll(".btnImagen");
+        BTN_IMAGEN.forEach((element, index) => {
+            element.addEventListener("click", relacionarImagenMapa(index));
+            element.addEventListener("click", console.log(index));
             element.addEventListener("click", buscarPersonaje);
         });
     } catch (error) {
-        alert("No se ha encontrado ese capitulo")
+        alert(error)
     }
 }
 
 async function buscarPersonaje() {
 
-    alert(BTN_IMAGEN.length);
+    console.log(numeroPersonaje);
     const url = `https://rickandmortyapi.com/api/character/${numeroPersonaje}`;
 
     const NOMBRE = document.querySelector(".nombrePersonaje");
@@ -76,4 +77,8 @@ async function buscarPersonaje() {
         color = "containerFemale";
         CONTAINER.add(color);
     }
+}
+
+function relacionarImagenMapa(index) {
+    numeroPersonaje = nombreId.get(index);
 }

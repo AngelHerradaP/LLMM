@@ -1,0 +1,31 @@
+.container{
+    width: 100%;
+}
+
+.cabeceraDiccionario{
+    background-color: blue;
+    color: white;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.palabra, .definicion{
+    margin-left: 10px;
+}
+
+.palabra{
+    color: green;
+}
+
+.buscador{
+    margin: auto;
+    padding: 20px;
+    width: 250px;
+    border: solid thin;
+}
+
+table{
+    margin-top: 20px;
+    width: 100%;
+}
