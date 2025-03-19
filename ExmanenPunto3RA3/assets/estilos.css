@@ -14,18 +14,25 @@
     margin-left: 10px;
 }
 
+.containerDesplegable{
+    margin: auto;
+    margin-top: 20px;
+}
+
+#desplegable{
+    width: 150px;
+}
+
 .palabra{
     color: green;
 }
 
-.buscador{
-    margin: auto;
+.buscador, .containerDesplegable{
     padding: 20px;
     width: 250px;
     border: solid thin;
 }
 
-table{
-    margin-top: 20px;
-    width: 100%;
+.buscador{
+    margin: auto;
 }

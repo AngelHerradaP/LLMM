@@ -39,7 +39,7 @@ async function buscarEpisodio() {
         let BTN_IMAGEN = document.querySelectorAll(".btnImagen");
         BTN_IMAGEN.forEach((element, index) => {
             element.addEventListener("click", relacionarImagenMapa(index));
-            element.addEventListener("click", console.log(index));
+            element.addEventListener("click", console.log(element[index]));
             element.addEventListener("click", buscarPersonaje);
         });
     } catch (error) {
