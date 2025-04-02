@@ -1,0 +1,35 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="curso">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="Primero"/>
+        <xs:enumeration value="Segundo"/>
+    </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="expedientes">
+        <xs:complexType>
+        <xs:sequence>
+            <xs:element name="expediente" maxOccurs="unbounded">
+                <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="titulacion"/>
+                    <xs:element name="estudiante"/>
+                    <xs:element name="modulos">
+                        <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="modulo" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="nombre" type="xs:string"/>
+                                    <xs:attribute name="aprobado" type="xs:boolean"/>
+                                    <xs:attribute name="curso" type="curso"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>   
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

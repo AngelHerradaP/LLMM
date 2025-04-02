@@ -1,0 +1,30 @@
+<!ELEMENT restaurante (menu, recetas, clientes)>
+    <!ELEMENT menu (plato+)>
+        <!ELEMENT plato (nombreM, categoriaM, ingredientesM, precioM)>
+            <!ELEMENT nombreM (#PCDATA)>
+            <!ELEMENT categoriaM (#PCDATA)>
+            <!ELEMENT ingredientesM (ingredienteM+)>
+                <!ELEMENT ingredienteM (#PCDATA)>
+            <!ELEMENT precioM (#PCDATA)>
+    <!ELEMENT recetas (receta+)>
+        <!ELEMENT receta (nombreR, ingredientesR, preparacionR)>
+            <!ELEMENT nombreR (#PCDATA)>
+            <!ELEMENT ingredientesR (ingredienteR+)>
+                <!ELEMENT ingredienteR (nombreIngredienteR)>
+                    <!ELEMENT nombreIngredienteR (#PCDATA)>
+            <!ELEMENT preparacionR (pasoR+)>
+                <!ELEMENT pasoR (#PCDATA)>
+    <!ELEMENT clientes (cliente+)>
+        <!ELEMENT cliente (nombreC, telefonoC, correoC, pedidosC)>
+            <!ELEMENT nombreC (#PCDATA)>
+            <!ELEMENT telefonoC (#PCDATA)>
+            <!ELEMENT correoC (#PCDATA)>
+            <!ELEMENT pedidosC (fechaC, platosC)>
+                <!ELEMENT fechaC (#PCDATA)>
+                <!ELEMENT platosC (platoClientesC+)>
+                    <!ELEMENT platoClientesC (#PCDATA)>
+
+<!ATTLIST categoriaM tipo CDATA #IMPLIED>
+<!ATTLIST precioM moneda CDATA #REQUIRED>
+<!ATTLIST nombreR tipo (adultos | ninyos) #REQUIRED>
+<!ATTLIST ingredienteR cantidad CDATA #REQUIRED>

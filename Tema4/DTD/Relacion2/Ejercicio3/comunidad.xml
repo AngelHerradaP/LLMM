@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comunidad SYSTEM "comunidad.dtd">
+<comunidad>
+    <vecinos>
+        <cod_vecino carg="presidente"></cod_vecino>
+        <nombre></nombre>
+        <apellidos></apellidos>
+        <portal></portal>
+        <pisoyletra></pisoyletra>
+        <cod_cuenta_ord></cod_cuenta_ord>
+    </vecinos>
+
+    <vecinos>
+        <cod_vecino carg="secretario"></cod_vecino>
+        <nombre></nombre>
+        <apellidos></apellidos>
+        <portal></portal>
+        <pisoyletra></pisoyletra>
+        <cod_cuenta_ord></cod_cuenta_ord>
+    </vecinos>
+
+    <vecinos>
+        <cod_vecino carg="vicepresidente"></cod_vecino>
+        <nombre></nombre>
+        <apellidos></apellidos>
+        <portal></portal>
+        <pisoyletra></pisoyletra>
+        <cod_cuenta_ord></cod_cuenta_ord>
+    </vecinos>
+
+    <vecinos>
+        <cod_vecino carg="vocal"></cod_vecino>
+        <nombre></nombre>
+        <apellidos></apellidos>
+        <portal></portal>
+        <pisoyletra></pisoyletra>
+        <cod_cuenta_ord></cod_cuenta_ord>
+    </vecinos>
+</comunidad>

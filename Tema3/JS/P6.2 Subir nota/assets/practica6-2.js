@@ -1,49 +1,48 @@
-const DESPLEGABLE_PERSONAJE = document.querySelector("#personaje");
 const BTN = document.querySelector(".botonBuscar");
-const TABLA_EPISODIO = document.querySelector(".tablaEpisodios");
+let TABLA_EPISODIO = document.querySelector(".tablaEpisodios");
+const NOMBRE = document.querySelector(".nombrePersonaje");
+const ESPECIE = document.querySelector(".especie");
+const GENERO = document.querySelector(".genero");
+const IMAGEN = document.querySelector(".imagen");
+const NUM_EPISODIOS = document.querySelector(".numeroEpisodios");
+const CONTAINER = document.querySelector(".tablaPersonaje").classList;
+
 let TABLA_EPISODIO_DEFAULT = TABLA_EPISODIO.innerHTML;
-let BTN_IMAGEN = document.querySelectorAll(".btnImagen");
 let color;
 let nombreId = new Map();
 let numeroPersonaje;
 
 BTN.addEventListener("click", buscarEpisodio);
-DESPLEGABLE_PERSONAJE.addEventListener("change", buscarPersonaje);
 
 async function buscarEpisodio() {
-
+    resetearHtml();
     TABLA_EPISODIO.innerHTML = TABLA_EPISODIO_DEFAULT;
     const EPISODIO = document.querySelector(".numeroEpisodio").value;
     TABLA_EPISODIO_DEFAULT = TABLA_EPISODIO.innerHTML;
 
     const url = `https://rickandmortyapi.com/api/episode/${EPISODIO}`;
 
-    const responseEpisode = await fetch(url);
-    const dataEpisode = await responseEpisode.json();
-
     try {
+        const responseEpisode = await fetch(url);
+        const dataEpisode = await responseEpisode.json();
         for (let index = 0; index < dataEpisode.characters.length; index++) {
             const responseCharacter = await fetch(dataEpisode.characters[index]);
             const dataCharacter = await responseCharacter.json();
-            TABLA_EPISODIO.innerHTML = TABLA_EPISODIO.innerHTML + 
-            `<tr>
-                <td>${dataCharacter.name}</td>
-                <td><img class="btnImagen" src="${dataCharacter.image}" width="100px" height="100px"></img></td>
-            </tr>`;
-            DESPLEGABLE_PERSONAJE.innerHTML = DESPLEGABLE_PERSONAJE.innerHTML + 
-            `<option value="${dataCharacter.id}"> 
-                ${dataCharacter.name}
-            </option>`;
+                TABLA_EPISODIO.innerHTML += 
+                    `<tr>
+                        <td>${dataCharacter.name}</td>
+                        <td><img class="btnImagen" src="${dataCharacter.image}" width="100px" height="100px"></img></td>
+                    </tr>`;
             nombreId.set(index, dataCharacter.id);
         }
         let BTN_IMAGEN = document.querySelectorAll(".btnImagen");
         BTN_IMAGEN.forEach((element, index) => {
-            element.addEventListener("click", relacionarImagenMapa(index));
-            element.addEventListener("click", console.log(element[index]));
-            element.addEventListener("click", buscarPersonaje);
+            element.addEventListener("click", () => {relacionarImagenMapa(index)});
+
         });
     } catch (error) {
-        alert(error)
+        TABLA_EPISODIO.style.color = "red";
+        TABLA_EPISODIO.innerHTML += `<p>No se ha encontrado ese capitulo<p>`;
     }
 }
 
@@ -51,13 +50,6 @@ async function buscarPersonaje() {
 
     console.log(numeroPersonaje);
     const url = `https://rickandmortyapi.com/api/character/${numeroPersonaje}`;
-
-    const NOMBRE = document.querySelector(".nombrePersonaje");
-    const ESPECIE = document.querySelector(".especie");
-    const GENERO = document.querySelector(".genero");
-    const IMAGEN = document.querySelector(".imagen");
-    const NUM_EPISODIOS = document.querySelector(".numeroEpisodios");
-    const CONTAINER = document.querySelector(".tablaPersonaje").classList;
 
     const response = await fetch(url);
     const data = await response.json();
@@ -73,12 +65,26 @@ async function buscarPersonaje() {
     if (data.gender == "Male") {
         color = "containerMale";
         CONTAINER.add(color);
-    } else {
+    } else if (data.gender == "Female") {
         color = "containerFemale";
+        CONTAINER.add(color);
+    }else {
+        color = "containerUnknown";
         CONTAINER.add(color);
     }
 }
 
 function relacionarImagenMapa(index) {
     numeroPersonaje = nombreId.get(index);
+    buscarPersonaje();
+}
+
+function resetearHtml() {
+    TABLA_EPISODIO.style.color = "white";
+    NOMBRE.innerHTML = "";
+    ESPECIE.innerHTML = "";
+    GENERO.innerHTML = "";
+    IMAGEN.src = "";
+    NUM_EPISODIOS.innerHTML = "";
+    CONTAINER.remove(color);
 }

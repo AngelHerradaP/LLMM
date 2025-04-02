@@ -14,14 +14,17 @@ body{
 
 .container1{
     grid-area: "container1";
-    margin: auto;
-    width: 50%;
+    width: 100%;
 }
 
 .container2{
     grid-area: "container2";
-    margin: auto;
-    width: 50%;
+    width: 100%;
+}
+
+.containerFijo{
+    position: fixed;
+    width: 500px;
 }
 
 #personaje{
@@ -32,12 +35,20 @@ body{
     width: 250px;
 }
 
-.tabla1{
-    width: 1000px;
-}
-
 table{
     margin: 20px auto auto auto;
+}
+
+.container2 h1{
+    margin-bottom: 63px;
+}
+
+.tablaPersonaje{
+    margin: auto;
+}
+
+.tablaEpisodios{
+    width: 400px;
 }
 
 th, td{
@@ -59,9 +70,13 @@ td{
 }
 
 .containerMale{
-   color: green;
+   color: rgb(73, 249, 73);
 }
 
 .containerFemale{
     color: yellow;
+}
+
+.containerUnknown{
+    color: rgb(252, 144, 144);
 }

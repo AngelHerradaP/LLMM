@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concesionario SYSTEM "coches.dtd">
+<concesionario>
+    <coches>
+        <cod_coche></cod_coche>
+        <marca></marca>
+        <modelo></modelo>
+        <matricula></matricula>
+        <cv></cv>
+        <plazas num_puertas="5"></plazas>
+    </coches>   
+
+    <coches>
+        <cod_coche></cod_coche>
+        <marca></marca>
+        <modelo></modelo>
+        <matricula></matricula>
+        <cv></cv>
+        <plazas num_puertas="3"></plazas>
+    </coches>   
+
+    <coches>
+        <cod_coche></cod_coche>
+        <marca></marca>
+        <modelo></modelo>
+        <matricula></matricula>
+        <cv></cv>
+        <plazas num_puertas="5"></plazas>
+    </coches>   
+
+    <coches>
+        <cod_coche></cod_coche>
+        <marca></marca>
+        <modelo></modelo>
+        <matricula></matricula>
+        <cv></cv>
+        <plazas num_puertas="3"></plazas>
+    </coches>   
+
+    <coches>
+        <cod_coche></cod_coche>
+        <marca></marca>
+        <modelo></modelo>
+        <matricula></matricula>
+        <cv></cv>
+        <plazas num_puertas="5"></plazas>
+    </coches>   
+</concesionario>
