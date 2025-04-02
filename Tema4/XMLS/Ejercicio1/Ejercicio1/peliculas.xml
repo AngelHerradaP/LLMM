@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pelicula id="1" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="./assets/peliculas.xsd"> 
+    <titulo>Inception</titulo> 
+    <anio>2010</anio> 
+    <director>Christopher Nolan</director> 
+    <genero>Ciencia Ficción</genero> 
+    <duracion>148</duracion> 
+    <disponibleEnStreaming>true</disponibleEnStreaming> 
+</pelicula> 
