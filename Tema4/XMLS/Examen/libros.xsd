@@ -1,0 +1,47 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="titulo">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[A-Za-z0-9\s]+"/>
+    </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="edad">
+    <xs:restriction base="xs:integer">
+        <xs:minInclusive value="18"/>
+        <xs:maxInclusive value="120"/>
+    </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="nacionalidad">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="española"/>
+        <xs:enumeration value="inglesa"/>
+        <xs:enumeration value="francesa"/>
+    </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="biblioteca">
+    <xs:complexType>
+    <xs:sequence>
+        <xs:element name="libro" maxOccurs="unbounded">
+        <xs:complexType>
+        <xs:sequence>
+            <xs:element name="titulo" type="titulo"/>
+            <xs:element name="autor">
+            <xs:complexType>
+            <xs:all>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="edad" type="edad"/>
+            </xs:all>  
+                <xs:attribute name="nacionalidad" type="nacionalidad"/>              
+            </xs:complexType>
+            </xs:element>
+            <xs:element name="fechaPublicacion" type="xs:date"/>
+        </xs:sequence>
+            <xs:attribute name="prestado" type="xs:boolean"/>
+        </xs:complexType>    
+        </xs:element>
+    </xs:sequence>
+    </xs:complexType>
+    </xs:element>
+</xs:schema>

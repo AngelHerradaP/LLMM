@@ -1,0 +1,56 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="confirmada">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="si"/>
+        <xs:enumeration value="no"/>
+    </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="edad">
+    <xs:restriction base="xs:integer">
+        <xs:minInclusive value="18"/>
+        <xs:maxInclusive value="120"/>
+    </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="individual"/>
+        <xs:enumeration value="doble"/>
+        <xs:enumeration value="suite"/>
+    </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="reservas">
+    <xs:complexType>
+    <xs:sequence>
+        <xs:element name="reserva" maxOccurs="50">
+        <xs:complexType>
+        <xs:sequence>
+            <xs:element name="cliente">
+            <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="apellidos" type="xs:string"/>
+                <xs:element name="edad" type="edad"/>
+                <xs:element name="direccion" type="xs:string"/>
+                <xs:choice>
+                    <xs:element name="telefono" type="xs:string"/>
+                    <xs:element name="email" type="xs:string"/>
+                </xs:choice>
+            </xs:sequence>
+            </xs:complexType> 
+            </xs:element>
+            <xs:element name="habitacion">
+            <xs:complexType mixed="true">
+                <xs:attribute name="tipo" type="tipo"/>
+            </xs:complexType>
+            </xs:element>
+        </xs:sequence>    
+            <xs:attribute name="confirmada" type="confirmada"/>
+        </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+    </xs:complexType>
+    </xs:element>
+</xs:schema>
