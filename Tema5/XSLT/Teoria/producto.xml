@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="producto.xsl" type="text/xsl"?>
+<productos>
+    <producto tipo="electronica">
+        <nombre>Raton</nombre>
+        <precio>25</precio>
+    </producto>
+    <producto tipo="ropa">
+        <nombre>Sudadera</nombre>
+        <precio>10</precio>
+    </producto>
+</productos>
