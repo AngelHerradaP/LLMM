@@ -1,0 +1,42 @@
+body{
+    background-color: lightgray;
+}
+
+h1{
+    background-color: yellow;
+    color: darkblue;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+}
+.container div {   
+    display: grid;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 2px;
+    border: solid black 1px;
+    width: 370px;
+    height: 180px;
+    border-radius: 15px;
+    box-shadow: darkblue;
+    box-shadow: 2px 2px 5px black; 
+}
+
+span{
+    font-weight: bolder;
+}
+
+ul{
+    list-style: none;
+    padding-left: 7px;
+}
+
+.container .duracion{
+    border: solid blue;
+}
